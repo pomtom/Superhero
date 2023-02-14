@@ -1,0 +1,24 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">{{titleforlist}}</div>
+
+    <div>
+        <table class="table">
+            <thead class="thead-dark">
+                <th>Id</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Phone</th>
+                <th>BirthDate</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let hero of superHeroList">
+                    <td>{{hero.Id}}</td>
+                    <td>{{hero.Name}}</td>
+                    <td>{{hero.City}}</td>
+                    <td>{{hero.Phone}}</td>
+                    <td>{{hero.BirthDate | date}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
