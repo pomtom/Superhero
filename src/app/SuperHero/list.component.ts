@@ -17,16 +17,19 @@ export class listComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.GetAllSuperHeros();
+  }
+
+
+  private GetAllSuperHeros() {
     this._superheroService.GetAllSuperHeros()
       .subscribe({
         next: (response) => {
           this.superHeroList = response;
-          console.log(response);
         },
         error: (Response) => {
           console.log(Response);
         }
-      })
+      });
   }
-
 }

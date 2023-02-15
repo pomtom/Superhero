@@ -1,5 +1,5 @@
 export class Superhero {
-    Id: Number = 0;
+    id: Number = 0;
     Name: string = '';
     City: string = '';
     Phone: string = '';
